@@ -46,6 +46,13 @@
 <div class="spinner"></div>
 </div>
 </div>
+
+<script>
+  if (window.top !== window.self && !window.location.ancestorOrigins?.[0]?.includes('mingame.ru')) {
+    window.top.location = window.self.location;
+  }
+</script>
+
 <script>
         const hideFullScreenButton = "";
         const buildUrl = "Build";
